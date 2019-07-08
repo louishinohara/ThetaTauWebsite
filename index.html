@@ -15,12 +15,69 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <title>ΘΤ | ΟΔ Chapter</title>
   </head>
-
+<body>
+  <nav id="navbar" class="navbar navbar-light bg-light fixed-top">
+      <a class="navbar-brand" href="#">
+          <img src ="img/OTletters.jpg"width="30" height="30" alt=""> <!-- Better Logo -->
+      </a>
+    <button class="navbar-toggler" type ="button" data-toggle="collapse" data-target="#navbarResponsive">
+          <span class="navbar-toggler-icon"></span>
+    </button>
+    <ul class="nav"> <!-- Want to highlight only the letters-->
+      <li class="nav-item">
+        <a class="nav-link" href="#Home">Home</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">About</a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#one">one</a>
+          <div role="separator" class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#two">two</a>
+          <div role="separator" class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#three">three</a>
+        </div>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" href="#Recruitment">Recruitment</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" href="#Members">Members</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" href="#Gallery">Gallery</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" href="#Contact">Contact</a>
+      </li>            
+    </ul>
+  </nav>
+  <div data-spy="scroll" data-target="#navbar" data-offset="0">
+    <h4 id="Home">Home</h4>
+    <p>...</p>
+    <h4 id="About">About</h4>
+    <p>...</p>
+    <h4 id="one">one</h4>
+    <p>...</p>
+    <h4 id="two">two</h4>
+    <p>...</p>
+    <h4 id="three">three</h4>
+    <p>...</p>
+    <h4 id="Recruitment">Recruitment</h4>
+    <p>...</p>
+    <h4 id="Members">Members</h4>
+    <p>...</p>
+    <h4 id="Gallery">Gallery</h4>
+    <p>...</p>
+    <h4 id="Contact">Contact</h4>
+    <p>...</p>
+  </div>
+</body>
+  <!--
   <body>
-    <!-- NAVIGATION BAR -->
+     NAVIGATION BAR 
     <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img src ="img/OTletter.jpg"></a> <!-- Fix Image Size-->
+        <a class="navbar-brand" href="#"><img src ="img/OTletter.jpg"></a> <!-- Fix Image Size
         <button class="navbar-toggler" type ="button" data-toggle="collapse" data-target="#navbarResponsive">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -48,5 +105,5 @@
         </div>
       </div>
     </nav>
-  </body>
+  </body> -->
 </html>
