@@ -1,3 +1,90 @@
-body { 
-    padding-top: 65px; 
-} /* Screen resize so navbar doesn't block content. This may not work on tablets and mobile tho.*/
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap'); 
+
+body{
+    overflow-x: hidden;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #5F6A72;
+}
+
+/*======= Nav Scrolling Offset =====*/
+.offset:before {
+    height: 4rem;
+    margin-top: -4rem;
+    content: "";
+    display: block;
+}
+
+/*===== Extra Bootstrap Column Padding =====*/
+[class*="col-"] {
+    padding: 1rem;
+}
+
+/*===== NAVIGATION =====*/
+.navbar {
+    padding: .7rem 1rem;
+    text-transform: uppercase;
+    font-size: .9rem;
+    font-weight: 700;
+    letter-spacing: .1rem;
+    transition: background-color .5s ease 0s;
+}
+.narbar-brand img{
+    height: 2rem;
+}
+.svg-inline--fa.fa-w-14 {
+    color:white;
+    font-size: 1.6rem;
+}
+.navbar-nav li {
+    padding-right: .8rem;
+}
+.navbar-nav .nav-link {
+    color: white;
+    padding-top: .8rem;
+}
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover {
+    color: #CC0033;
+}
+.navbar.solid {
+    background: rgba(0,0,0,0.7)!important;
+    transition: background-color 1s ease 0s;
+}
+
+/*===== Landing Page Image =====*/
+.home-inner {
+    background-image: url('img/fratImages/computers.png') /* Temp Photo */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* Screen resize so navbar doesn't block content. This may not work on tablets and mobile tho.*/
+
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/
