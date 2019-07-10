@@ -51,23 +51,125 @@ body{
     transition: background-color 1s ease 0s;
 }
 
-/*===== Landing Page Image =====*/
+/*===== Landing Page =====*/
 .home-inner {
     background-image: url('img/fratImages/computers.png') /* Temp Photo */
 }
 
+.caption {
+    width: 100%;
+    max-width: 100%;
+    position: absolute;
+    top: 38%;
+    z-index: 1;
+}
 
+.caption h1 {
+    color: white;
+    font-size: 15 rem;
+    font-weight: 600;
+    letter-spacing: .3rem;
+    text-shadow: .1rem .1rem .8rem black; /* Horizontal, vertical, background blur */
+}
 
+.caption h2 {
+    color: white;
+    font-size: 25 rem;
+    font-weight: 700;
+    letter-spacing: .3rem;
+    text-shadow: .1rem .1rem .8rem black;
+}
 
+.caption h3 {
+    color: white;
+    font-size: 6 rem;
+    font-weight: 500;
+    letter-spacing: .3rem;
+    text-shadow: .1rem .1rem .8rem black; 
+}
 
+.caption h4 {
+    color: white;
+    font-size: 6 rem;
+    font-weight: 500;
+    letter-spacing: .3rem;
+    text-shadow: .1rem .1rem .8rem black; 
+}
 
+/*===== Contact Section =====*/
+footer {
+    background: url('img/footer/footer.png') no-repeat; /* Change background photo */
+    background-size: cover;
+    color: white;
+}
+footer .row {
+    background-color: rgba(57, 63, 70, 0.85);
+    padding: 1rem 2rem 3rem;
+}
 
+footer img {
+    height: 2rem;
+    margin: 1.5rem 0;
+}
 
+footer a {
+    color: white;
+}
 
+footer svg.svg-inline--fa{
+    font-size: 1.6rem;
+    margin: .3rem .5rem 0 0;
+}
 
+footer svg.svg-inline--fa:hover {
+    color: #CC0033!important;
+}
 
+footer h3 {
+    text-transform: uppercase;
+    margin: 1.5rem 0;
+}
 
+/*===== Contact Section =====*/
+.form-group {
+    margin-bottom: .6rem;
+}
 
+.form-control {
+    background-color: #53595f;
+    border-radius: 0;
+    border:.15rem solid#666B71;
+    color: white!important;
+    font-size: 1.1rem;
+}
+
+.form-control:focus {
+    background: #53595f;
+    border: .15rem solid#666B71;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #a3a3a1!important;
+}
+
+input.btn {
+    cursor: pointer;
+    /*border: .15rem solid#666B71; */
+}
+
+hr.socket {
+    border-top: .2rem solid#666b71;
+    width:100%
+}
+
+/*====== NOTES
+* Change contact form border color from blue to something else
+* Need a logo in png form and ico form
+* Landing Page Shadow over photo until it moves or something like that
+* Change Color of the button for contact form
+* Might Have to Use Alternate Contact Form because domain name
+*/
  /* Screen resize so navbar doesn't block content. This may not work on tablets and mobile tho.*/
 
 /*============ BOOTSTRAP BREAK POINTS:
