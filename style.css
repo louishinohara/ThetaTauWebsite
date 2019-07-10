@@ -4,6 +4,7 @@ body{
     overflow-x: hidden;
     font-family: 'Roboto Condensed', sans-serif;
     color: #5F6A72;
+    /*background-color: black;*/
 }
 
 /*======= Nav Scrolling Offset =====*/
@@ -23,7 +24,7 @@ body{
 .navbar {
     padding: .7rem 1rem;
     text-transform: uppercase;
-    font-size: .9rem;
+    font-size: 1.15rem;
     font-weight: 700;
     letter-spacing: .1rem;
     transition: background-color .5s ease 0s;
@@ -53,7 +54,7 @@ body{
 
 /*===== Landing Page =====*/
 .home-inner {
-    background-image: url('img/fratImages/computers.png') /* Temp Photo */
+    background-image: url('img/fratImages/TauClassBestClass1.jpg') /* Temp Photo */
 }
 
 .caption {
