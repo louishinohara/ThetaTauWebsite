@@ -4,7 +4,7 @@ body{
     overflow-x: hidden;
     font-family: 'Roboto Condensed', sans-serif;
     color: #5F6A72;
-    /*background-color: black;*/
+    background-color: #1b1b1b;
 }
 
 /*======= Nav Scrolling Offset =====*/
@@ -97,6 +97,87 @@ body{
     text-shadow: .1rem .1rem .8rem black; 
 }
 
+/*=== Album Grid Layout ===*/
+.grid-layout {
+    display: grid;
+    grid-gap: 8px;
+    grid-auto-flow: dense;
+    padding: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    grid-auto-rows: minmax(180px, auto);
+}
+
+.grid-item { /*Delete Later */
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #929796;
+    background-color: #333;
+    border-radius: 5px;
+}
+
+.span-2 {
+    grid-column-end: span 2;
+    grid-row-end: span 1;
+}
+
+.span-3 {
+    grid-column-end: span 2;
+    grid-row-end: span 2;
+}
+.span-4 {
+    grid-column-end: span 3;
+    grid-row-end: span 2;
+}
+
+.span-5 {
+    grid-column-end: span 1;
+    grid-row-end: span 2;
+}
+
+.span-6 {
+    grid-column-end: span 3;
+    grid-row-end: span 1;
+}
+
+.span-7 {
+    grid-column-end: span 2;
+    grid-row-end: span 3; 
+}
+
+.span-8 {
+    grid-column-end: span 3;
+    grid-row-end: span 2; 
+}
+
+.span-9 {
+    grid-column-end: span 3;
+    grid-row-end: span 3; 
+}
+
+/*===== ALBUM PHOTO ====== */
+.row.padding {
+    padding: 2rem 0 1rem;
+}
+
+img.example-image {
+    max-width: 100%;
+}
+
+.row.no-padding [class *= col-] {
+    padding: 0.3rem;
+}
+
+.album-item img:hover {
+    border: 1px solid grey;
+}
+
+.album-item img {
+    transition: transform .4s ease;
+}
+
+
+
 /*===== Contact Section =====*/
 footer {
     background: url('img/footer/footer.png') no-repeat; /* Change background photo */
@@ -163,6 +244,10 @@ hr.socket {
     border-top: .2rem solid#666b71;
     width:100%
 }
+
+
+
+
 
 /*====== NOTES
 * Change contact form border color from blue to something else

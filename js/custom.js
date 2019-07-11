@@ -45,3 +45,27 @@ $(document).ready(function() {
         $(".arrow").css("opacity",1-$(window).scrollTop() / 250);
     });
 });
+
+/*======== CAROUSEL SLIDER FOR ALBUM ========== */
+
+$(document).ready(function() {
+    $("#album-slider").owlCarousel({
+        items:3,
+        autoplay:true,
+        samrtSpeed:700,
+        loop:true,
+        autoplayHoverPause:true,
+        responsive : {
+            0 : {
+                items: 1
+            },
+            576 : {
+                items: 2
+            },
+            768 : {
+                items: 3
+            }
+        }
+    }
+    );
+});
