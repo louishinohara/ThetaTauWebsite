@@ -54,7 +54,7 @@ body{
 
 /*===== Landing Page =====*/
 .home-inner {
-    background-image: url('img/fratImages/TauClassBestClass1.jpg') /* Temp Photo */
+    background-image: url('img/fratImages/TauClassBestClass.jpg') /* Temp Photo */
 }
 
 .caption {
@@ -96,8 +96,83 @@ body{
     letter-spacing: .3rem;
     text-shadow: .1rem .1rem .8rem black; 
 }
+/*== ALBUM GRID ====*/
+.container {
+    width: 100%;
+    display: grid;
+    grid-auto-flow: dense;
+    padding: 0;
+    grid-template:  "1fr 1fr 1fr 1fr" 50vh /* Manual Grid Creation */
+                    "1fr 1fr 1fr 1fr" 50vh
+                    "1fr 1fr 1fr 1fr" 50vh
+                    "1fr 1fr 1fr 1fr" 50vh
+                    "1fr 1fr 1fr 1fr" 50vh
+                    "1fr 1fr 1fr 1fr" 50vh
+                    "1fr 1fr 1fr 1fr" 50vh;
+    grid-gap: 5px;
+}
 
-/*=== Album Grid Layout ===*/
+.container .box {
+    position: relative;
+    background: #ccc;
+}
+
+.container .box.a {
+    grid-row: span 2;
+}
+
+.container .box.b {
+    grid-column: span 2;
+}
+.container .box.c {
+    grid-row: span 3;
+}
+
+.container .box.d {
+    grid-column: span 3;
+}
+
+.container .box.e {
+    grid-row: span 3;
+    grid-column: span 2;
+}
+
+.container .box.f {
+    grid-row: span 3;
+    grid-column: span 2;
+}
+
+.container .box img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 991px) {
+    .container {
+        grid-template:  "1fr 1fr 1fr" 250px
+                        "1fr 1fr 1fr" 250px
+                        "1fr 1fr 1fr" 250px
+                        "1fr 1fr 1fr" 250px
+                        "1fr 1fr 1fr" 250px;
+        grid-gap: 5px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        grid-template:  "1fr 1fr" 200px
+                        "1fr 1fr" 200px
+                        "1fr 1fr" 200px
+                        "1fr 1fr" 200px
+                        "1fr 1fr" 200px;
+        grid-gap: 5px;
+    }
+}
+/*=== Album Grid Layout ===
 .grid-layout {
     display: grid;
     grid-gap: 8px;
@@ -107,7 +182,7 @@ body{
     grid-auto-rows: minmax(180px, auto);
 }
 
-.grid-item { /*Delete Later */
+.grid-item { /*Delete Later 
     font-size: 14px;
     font-weight: bold;
     text-transform: uppercase;
@@ -155,7 +230,7 @@ body{
     grid-row-end: span 3; 
 }
 
-/*===== ALBUM PHOTO ====== */
+/*===== ALBUM PHOTO ====== 
 .row.padding {
     padding: 2rem 0 1rem;
 }
@@ -176,7 +251,7 @@ img.example-image {
     transition: transform .4s ease;
 }
 
-
+*/
 
 /*===== Contact Section =====*/
 footer {
@@ -255,6 +330,7 @@ hr.socket {
 * Landing Page Shadow over photo until it moves or something like that
 * Change Color of the button for contact form
 * Might Have to Use Alternate Contact Form because domain name
+* Lightbox being wierd. Will pop up black the first time. Also no arrows to navigate left and right
 */
  /* Screen resize so navbar doesn't block content. This may not work on tablets and mobile tho.*/
 
