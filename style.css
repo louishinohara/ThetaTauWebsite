@@ -6,7 +6,23 @@ body{
     color: #5F6A72;
     background-color: #1b1b1b;
 }
+.sectionHeading {  /* Section Labels */
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+    letter-spacing: 0px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 
+.heading-underline {
+    width: 3rem;
+    height: .2rem;
+    background-color: #CC0033;
+    margin: 0 auto 2rem;
+  }
 /*======= Nav Scrolling Offset =====*/
 .offset:before {
     height: 4rem;
@@ -96,19 +112,62 @@ body{
     letter-spacing: .3rem;
     text-shadow: .1rem .1rem .8rem black; 
 }
+.requirements-bottom {
+    padding-bottom: 70px;
+}
+/*===== FIXED BACKGROUND =====*/
+.albumHeading{
+    padding-bottom: 400px;
+    letter-spacing: .3rem;
+    text-shadow: .1rem .1rem .8rem black;
+}
+#fixed {
+    background-image: url('img/fratImages/horizontal/BrosGivmas2018.jpg');
+    z-index: -1;
+  }
+  .fixed-meetus {
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 7rem 2rem;
+    text-align: center;
+    z-index: 1000!important;
+  }
+  .fixed-meetus h3, .fixed-meetus p {
+    color: #E9ECEF;
+  }
+
+  /*== Meet The Family Section ==*/
+.frat-position { /* Adjust Color */
+    text-align: right;
+    color: red;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.frat-class {
+    text-align: left;
+    color: gold;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
 /*== ALBUM GRID ====*/
 .container {
     width: 100%;
     display: grid;
     grid-auto-flow: dense;
     padding: 0;
-    grid-template:  "1fr 1fr 1fr 1fr" 50vh /* Manual Grid Creation */
-                    "1fr 1fr 1fr 1fr" 50vh
-                    "1fr 1fr 1fr 1fr" 50vh
-                    "1fr 1fr 1fr 1fr" 50vh
-                    "1fr 1fr 1fr 1fr" 50vh
-                    "1fr 1fr 1fr 1fr" 50vh
-                    "1fr 1fr 1fr 1fr" 50vh;
+    grid-template:  "1fr 1fr 1fr 1fr" 45vh /* Manual Grid Creation */
+                    "1fr 1fr 1fr 1fr" 45vh
+                    "1fr 1fr 1fr 1fr" 45vh
+                    "1fr 1fr 1fr 1fr" 45vh
+                    "1fr 1fr 1fr 1fr" 45vh
+                    "1fr 1fr 1fr 1fr" 45vh
+                    "1fr 1fr 1fr 1fr" 45vh
+                    "1fr 1fr 1fr 1fr" 45vh
+                    "1fr 1fr 1fr 1fr" 45vh
+                    "1fr 1fr 1fr 1fr" 45vh
+                    "1fr 1fr 1fr 1fr" 45vh
+                    "1fr 1fr 1fr 1fr" 45vh
+                    "1fr 1fr 1fr 1fr" 10vh;
     grid-gap: 5px;
 }
 
@@ -133,15 +192,8 @@ body{
 }
 
 .container .box.e {
-    grid-row: span 3;
-    grid-column: span 2;
+    grid-column: span 4;
 }
-
-.container .box.f {
-    grid-row: span 3;
-    grid-column: span 2;
-}
-
 .container .box img {
     position: absolute;
     top: 0;
@@ -150,6 +202,11 @@ body{
     height: 100%;
     object-fit: cover;
 }
+/* - Fix bottom padding
+    - Add shadow effect when hovering
+    - Give lightbox options to move left and right 
+    - Lightbox transition faster 
+    - Fix album label*/
 
 @media (max-width: 991px) {
     .container {
@@ -157,7 +214,15 @@ body{
                         "1fr 1fr 1fr" 250px
                         "1fr 1fr 1fr" 250px
                         "1fr 1fr 1fr" 250px
-                        "1fr 1fr 1fr" 250px;
+                        "1fr 1fr 1fr" 250px
+                        "1fr 1fr 1fr" 250px
+                        "1fr 1fr 1fr" 250px
+                        "1fr 1fr 1fr" 250px
+                        "1fr 1fr 1fr" 250px
+                        "1fr 1fr 1fr" 250px
+                        "1fr 1fr 1fr" 250px
+                        "1fr 1fr 1fr" 250px
+                        "1fr 1fr 1fr" 45px;
         grid-gap: 5px;
     }
 }
@@ -168,90 +233,26 @@ body{
                         "1fr 1fr" 200px
                         "1fr 1fr" 200px
                         "1fr 1fr" 200px
-                        "1fr 1fr" 200px;
+                        "1fr 1fr" 200px
+                        "1fr 1fr" 200px
+                        "1fr 1fr" 200px
+                        "1fr 1fr" 200px
+                        "1fr 1fr" 200px
+                        "1fr 1fr" 200px
+                        "1fr 1fr" 200px
+                        "1fr 1fr" 200px
+                        "1fr 1fr" 45px;
         grid-gap: 5px;
     }
 }
-/*=== Album Grid Layout ===
-.grid-layout {
-    display: grid;
-    grid-gap: 8px;
-    grid-auto-flow: dense;
-    padding: 10px;
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-    grid-auto-rows: minmax(180px, auto);
-}
-
-.grid-item { /*Delete Later 
-    font-size: 14px;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #929796;
-    background-color: #333;
-    border-radius: 5px;
-}
-
-.span-2 {
-    grid-column-end: span 2;
-    grid-row-end: span 1;
-}
-
-.span-3 {
-    grid-column-end: span 2;
-    grid-row-end: span 2;
-}
-.span-4 {
-    grid-column-end: span 3;
-    grid-row-end: span 2;
-}
-
-.span-5 {
-    grid-column-end: span 1;
-    grid-row-end: span 2;
-}
-
-.span-6 {
-    grid-column-end: span 3;
-    grid-row-end: span 1;
-}
-
-.span-7 {
-    grid-column-end: span 2;
-    grid-row-end: span 3; 
-}
-
-.span-8 {
-    grid-column-end: span 3;
-    grid-row-end: span 2; 
-}
-
-.span-9 {
-    grid-column-end: span 3;
-    grid-row-end: span 3; 
-}
-
-/*===== ALBUM PHOTO ====== 
-.row.padding {
-    padding: 2rem 0 1rem;
-}
-
-img.example-image {
-    max-width: 100%;
-}
-
-.row.no-padding [class *= col-] {
-    padding: 0.3rem;
-}
-
+/*===== ALBUM PHOTO ====== */
 .album-item img:hover {
+    box-shadow: #1b1b1b; /* fix */
     border: 1px solid grey;
 }
-
 .album-item img {
     transition: transform .4s ease;
 }
-
-*/
 
 /*===== Contact Section =====*/
 footer {
@@ -319,8 +320,25 @@ hr.socket {
     border-top: .2rem solid#666b71;
     width:100%
 }
+/*============= TOP SCROLL =============*/
 
-
+.top-scroll svg.svg-inline--fa {
+    font-size: 3rem;
+    height: 1.7rem;
+    color: #53595f;
+    background: white;
+  }
+  a.top-scroll {
+    right: 1.2rem;
+    bottom: 1.2rem;
+    position: fixed;
+    opacity: .3;
+    z-index: 1000;
+    display: none;
+  }
+  a.top-scroll:hover {
+    opacity: .5;
+  }
 
 
 
