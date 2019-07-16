@@ -44,6 +44,7 @@ body{
     font-weight: 700;
     letter-spacing: .1rem;
     transition: background-color .5s ease 0s;
+    text-shadow: 0.07rem 0.07rem 1rem black;
 }
 .narbar-brand img{
     height: 2rem;
@@ -70,7 +71,7 @@ body{
 
 /*===== Landing Page =====*/
 .home-inner {
-    background-image: url('img/fratImages/TauClassBestClass.jpg') /* Temp Photo */
+    background-image: url('img/fratImages/TauClassBestClass.jpg') 
 }
 
 .caption {
@@ -115,6 +116,8 @@ body{
 .requirements-bottom {
     padding-bottom: 70px;
 }
+/*== RUSH SECTION ==*/
+
 /*===== FIXED BACKGROUND =====*/
 .albumHeading{
     padding-bottom: 530px;
@@ -147,7 +150,7 @@ body{
 }
 
 .frat-class {
-    text-align: left;
+    text-align: center;
     color: gold;
     font-weight: 300;
     text-transform: uppercase;
@@ -302,6 +305,7 @@ body{
 }
 
 @media (max-width: 768px) {
+    
     .container {
         grid-template:  "1fr 1fr" 200px
                         "1fr 1fr" 200px
