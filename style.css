@@ -117,6 +117,13 @@ body{
     padding-bottom: 70px;
 }
 /*== RUSH SECTION ==*/
+.rush-poster {
+    width: auto; 
+    text-align: center; 
+    margin-top: 3%;
+    height:auto;
+}
+
 
 /*===== FIXED BACKGROUND =====*/
 .albumHeading{
