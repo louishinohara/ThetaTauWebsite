@@ -91,10 +91,14 @@ body{
 .navbar-nav .nav-link:hover {
     color: #CC0033;
 }
+.nav-item {
+    position: relative;
+}
 .navbar.solid {
     background: rgba(0,0,0,0.7)!important;
     transition: background-color 1s ease 0s;
 }
+
 
 /*===== Landing Page =====*/
 .home-inner {
@@ -145,26 +149,37 @@ body{
 }
 /*== ABOUT SECTION ==*/
 /* Three image containers (use 25% for four, and 50% for two, etc) */
-.column1 {
+/* .column { 
     float: left;
     width: 33.33%;
     padding: 5px;
   }
   
-  /* Clear floats after image containers */
-  .row1::after {
+  /* Clear floats after image containers 
+  .row::after {
     content: "";
     clear: both;
     display: table;
     
+  } */
+ 
+.aboutImgTitle {
+    color: white;
+    font-size: 25px;
   }
 
-  @media screen and (max-width: 500px) {
-    .column1 {
-      width: 100%;
+@media (max-width:576px) {
+    .aboutImgCenter  {
+        padding-left: none;
+        padding-right: none;
+    }    
+    .aboutImgLeft {
+        padding-left: none;
+    }
+    .aboutImgRight {
+        padding-right:none;
     }
   }
-
 /*== RUSH SECTION ==*/
 .rush-poster {
     width: auto; 
