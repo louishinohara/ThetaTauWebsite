@@ -166,19 +166,44 @@ body{
 .aboutImgTitle {
     color: white;
     font-size: 25px;
+    padding-top: 13px;
+  }
+
+.aboutImage img {
+    transition: transform .4s ease;
+  }
+
+.aboutImage img:hover {
+    transform: scale(1.1);
+    filter: brightness(66%);
+    box-shadow:0 0 16px black;
+}
+
+.aboutImage {
+    overflow: hidden;  
+}
+.aboutCaption {
+    color: white;
+}
+/* Removes ugly blue color when hovering over a link */
+a:link {
+    text-decoration: none;
+  }
+  
+  a:visited {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: none;
+  }
+  
+  a:active {
+    text-decoration: none;
   }
 
 @media (max-width:576px) {
-    .aboutImgCenter  {
-        padding-left: none;
-        padding-right: none;
-    }    
-    .aboutImgLeft {
-        padding-left: none;
-    }
-    .aboutImgRight {
-        padding-right:none;
-    }
+
   }
 /*== RUSH SECTION ==*/
 .rush-poster {
