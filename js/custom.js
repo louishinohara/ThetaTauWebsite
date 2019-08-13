@@ -38,7 +38,30 @@ $(document).ready(function()    {
         }
     });
 });
-
+/*========== DROP-DOWN MENU ==========*/
+ 
+$('.dropdown-menu a.dropdown-toggle').on('click', function(e) {
+    if (!$(this).next().hasClass('show')) {
+      $(this).parents('.dropdown-menu').first().find('.show').removeClass("show");
+    }
+    var $subMenu = $(this).next(".dropdown-menu");
+    $subMenu.toggleClass('show');
+    $(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function(e) {
+      $('.dropdown-submenu .show').removeClass("show");
+    });
+    return false;
+  });
+   
+  $(document).ready(function() {
+          $(window).scroll(function() {
+            if($(this).scrollTop() > 300) { 
+                $('.dropdown-menu').addClass('solid');
+            } else {
+                $('.dropdown-menu').removeClass('solid');
+            }
+          });
+  });
+  
 /*========== BOUNCING DOWN ARROW ==========*/
 $(document).ready(function() { 
     $(window).scroll(function() { 

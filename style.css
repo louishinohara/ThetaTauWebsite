@@ -98,8 +98,38 @@ body{
     background: rgba(0,0,0,0.7)!important;
     transition: background-color 1s ease 0s;
 }
-
-
+@media (max-width:576px) {
+    
+}
+/*--- Drop-down Menu --*/
+.dropdown-menu, .dropdown-item {
+    font-size: 1rem;
+    font-weight: 500!important;
+    background-color: transparent!important;
+    border: 0;
+    color: white;
+  }
+  .dropdown-menu.show {
+    margin-top: .68rem!important;
+    border-radius: 0;
+    transition: background-color .5s ease 0s;
+  }
+  .dropdown-submenu {
+    transition: background-color .5s ease 0s;
+  }
+  .dropdown-menu.no-space-top {
+    margin-top: 1!important;
+  }
+  .dropdown-menu:hover, .dropdown-item:hover,
+  .dropdown-menu:focus, .dropdown-item:focus,
+  .dropdown-toggle:active, .dropdown-toggle:focus {
+    color: #cc0033!important;
+  }
+  .dropdown-submenu.solid, .dropdown-menu.show.solid {
+    background: rgba(0, 0, 0, 0.7)!important;
+    transition: background-color 1s ease 0s;
+  }
+  
 /*===== Landing Page =====*/
 .home-inner {
     background-image: url('img/fratImages/TauClassBestClass.jpg') 
