@@ -98,9 +98,7 @@ body{
     background: rgba(0,0,0,0.7)!important;
     transition: background-color 1s ease 0s;
 }
-@media (max-width:576px) {
-    
-}
+
 /*--- Drop-down Menu --*/
 .dropdown-menu, .dropdown-item {
     font-size: 1rem;
@@ -214,6 +212,9 @@ body{
 .aboutCaption {
     color: white;
 }
+.jumbotron {
+    background-color: rgb(46, 46, 46);
+}
 /* Removes ugly blue color when hovering over a link */
 a:link {
     text-decoration: none;
@@ -236,9 +237,7 @@ a:link {
   }
 /*== RUSH SECTION ==*/
 .rush-poster {
-    width: auto; 
-    text-align: center; 
-    margin-top: 3%;
+    max-width:100%;
     height:auto;
 }
 

@@ -16,7 +16,7 @@ a.down-arrow {
   color: #fff; /*arrow color*/
 }
 .down-arrow svg.svg-inline--fa {
-  opacity: .3; /*arrow opacity*/
+  opacity: .4; /*arrow opacity*/
   font-size: 2rem; /*arrow size*/
 }
 .down-arrow svg.svg-inline--fa:hover {
