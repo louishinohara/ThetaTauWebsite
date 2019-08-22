@@ -21,3 +21,12 @@ body{
 .profBackground{
     background-image: url('img/OTNetworks.jpg')
 }
+
+.carousel {
+    width: 100%;
+  }
+
+  .carousel-inner {
+    height: 800px;
+    object-fit: cover;
+ }
