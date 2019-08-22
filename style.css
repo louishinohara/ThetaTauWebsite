@@ -572,8 +572,8 @@ a:link {
     }
 }
 /*===== ALBUM PHOTO ====== */
-/* .album-item img:hover { */
-    box-shadow: #1b1b1b; /* fix 
+/* .album-item img:hover { 
+    box-shadow: #1b1b1b; fix 
     border: 1px solid grey;
 }*/
 .album-item img {
