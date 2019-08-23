@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap'); 
+
+body{
+    overflow-x: hidden;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #5F6A72;
+    background-color: #1b1b1b;
+}
+
