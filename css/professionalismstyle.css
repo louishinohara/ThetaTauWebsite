@@ -22,12 +22,11 @@ body{
     background-image: url('img/OTNetworks.jpg')
 }
 
-.carousel {
+/* .carousel {
     width: 400px;
     height: 400px;    
 }
 
-  .carousel-inner {
-    height: 800px;
-    object-fit: cover;
- }
+  .carousel-inner .item a img{
+    margin: auto;
+ } */
