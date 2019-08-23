@@ -297,7 +297,9 @@ a:link {
   }
 
 @media (max-width:576px) {
-
+    .miniSection {
+        text-align: center;
+    }
   }
 /*== RUSH SECTION ==*/
 .rush-poster {
