@@ -23,8 +23,9 @@ body{
 }
 
 .carousel {
-    width: 100%;
-  }
+    width: 400px;
+    height: 400px;    
+}
 
   .carousel-inner {
     height: 800px;
