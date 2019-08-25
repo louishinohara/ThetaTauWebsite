@@ -745,3 +745,102 @@ Extra (xl) large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { ... }
 
 =============*/
+
+.brotherPhoto{
+	position:relative;
+    width:250px;
+    height:370px;
+    float:left;
+    background-size:100%; 
+    background-position:center;
+    /* transition:0.5s; */
+    overflow:hidden;
+    border-radius:4px;
+	box-shadow:0 0 4px #000;
+	overflow-y:visible;
+    display:flex;
+    background-size:cover;
+    margin:10px 10px;
+    display:inline-flex;
+    margin-left:0;
+  }
+  
+
+  .brotherPhoto:before{             /* What is displayedBefore hover effect */
+    position:absolute;
+      top:0;
+      bottom:0;
+      left:0;
+      right:0;
+      transform:translateY(90%);/*use transform:translateY(100%); to remove footer*/
+      background-color:rgba(0,0,0,0.3);
+      color:#fff;
+      padding:0 8px;
+      content:attr(name);
+      transition:0.5s 0.1s;
+      color:#fff;
+      font-weight:bold;
+      font-size:1.5em;
+
+  }
+
+  .brotherPhoto:after{
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    color:#fff;
+    padding:8px;
+    content:attr(gradYear);
+    transition:0.5s;
+    padding-top:2em;
+    margin-top:8px;
+    transform:translateY(100%);
+    opacity:0;
+    }
+
+   
+    .brotherPhoto:hover:after{
+        transform:translateY(82%);
+        transition:0.5s 0.1s;
+        opacity:1;
+    }
+    .brotherPhoto:hover:before{
+        transform:translateY(80%);
+        padding:8px;
+        background-color:rgba(0,0,0,0.6);
+        transition:0.5s;
+  }
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
