@@ -630,18 +630,17 @@ Extra (xl) large devices (large desktops, 1200px and up)
 	position:relative;
     width:250px;
     height:370px;
-    float: left;
+    /* float: left; */
     background-size:100%; 
     background-position:center;
     /* transition:0.5s; */
-    overflow:hidden;
+    /* overflow:hidden; */
     border-radius:4px;
 	box-shadow:0 0 4px #000;
-	overflow-y:visible;
-    display:flex;
+	/* overflow-y:visible; */
+    /* display:flex; */
     background-size:cover;
     margin:10px 10px;
-    display:inline-flex;
     margin-left:0;
   }
   
