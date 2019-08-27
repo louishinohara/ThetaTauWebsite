@@ -247,6 +247,7 @@ body{
 
 /* Left and Right Side Card Images with Description */
 /* ABOUT IMAGE CARDS */
+
 .card {
     background-color: rgb(46, 46, 46);
     border: none;
@@ -672,6 +673,7 @@ Extra (xl) large devices (large desktops, 1200px and up)
       font-weight:bold;
       font-size:1.5em;
 
+      
   }
 
   .brotherPhoto:after{
@@ -833,7 +835,15 @@ Extra (xl) large devices (large desktops, 1200px and up)
     .brother .brother-info *{
         font-size:.7rem
     }
-
+    /* .mobile {
+        min-width:160px;
+        height:200px;
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(6, calc(50% - 40px));
+        grid-template-rows: minmax(150px, 1fr);
+        overflow-x: scroll;
+    } */
 /* .brother__hold{
     display:-webkit-box;
     display:-ms-flexbox;
