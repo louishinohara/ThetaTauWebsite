@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap'); 
+
+body{
+    overflow-x: hidden;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #5F6A72;
+    background-color: #1b1b1b;
+}
+
+.rudmPic{
+    width:250px;
+    height:370px;
+    border-radius:5px;
+    padding:0;
+    overflow-y:visible;
+    display:flex;
+    background-size:cover;
+    margin:10px 10px;
+    cursor:pointer;
+    display:inline-flex;
+    margin-left:0;
+}
+img {
+    max-width: 100%;
+    height: auto;
+  }

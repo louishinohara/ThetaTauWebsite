@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap'); 
+
+body{
+    overflow-x: hidden;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #5F6A72;
+    background-color: #1b1b1b;
+}
+
+.psectionHead{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+    letter-spacing: 0px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.profBackground{
+    background-image: url('img/OTNetworks.jpg')
+}
+
+/* .carousel {
+    width: 400px;
+    height: 400px;    
+}
+
+  .carousel-inner .item a img{
+    margin: auto;
+ } */
