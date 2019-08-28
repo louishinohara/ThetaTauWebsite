@@ -4,7 +4,8 @@ body{
     overflow-x: hidden;
     font-family: 'Roboto Condensed', sans-serif;
     color: #5F6A72;
-    background-color: #1b1b1b;
+    background-color: black;
+    /* #1b1b1b; */
 }
 .sectionHeading {  /* Section Labels */
     text-align: center;
