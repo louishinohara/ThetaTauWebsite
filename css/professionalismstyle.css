@@ -23,5 +23,17 @@ body{
   }
 
   ul {
-    list-style-type: square;
+    list-style: none; /* Remove HTML bullets */
+    padding: 0;
+    margin: 0;
+  }
+
+  li.p{
+      padding-left: 10%
+  }
+
+  li.p::before {
+    content: "■"; /* Insert content that looks like bullets */
+    padding-right: 8px;
+    color: red; /* Or a color you prefer */
   }
