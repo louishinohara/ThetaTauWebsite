@@ -156,10 +156,10 @@ body{
     transition: background-color 1s ease 0s;
   }
   
-/* ===== Landing Page =====
-.inner {
-    background-image: url('img/fratImages/horizontal/NiceHotCocoa.jpg') 
-} */
+/*===== Landing Page =====*/
+.home-inner {
+    background-image: url('img/fratImages/TauClassBestClass.jpg') 
+}
 
 .caption {
     width: 100%;
@@ -243,8 +243,6 @@ body{
 .aboutCaption {
     color: white;
     font-size: 1.4rem;
-    display: center;
-    padding: 1px;
 }
 
 /* Left and Right Side Card Images with Description */
