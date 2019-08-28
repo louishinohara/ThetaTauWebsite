@@ -314,6 +314,22 @@ a:link {
     padding: 25px;
 }
 
+.contents .jumbotron {
+    background-color: rgb(161, 161, 161);
+}
+.requirementsHeading {
+    text-align: center;
+    color: white;
+    font-size: 1.7rem;
+    letter-spacing: 0px;
+    font-weight: 700;
+}
+.requirementsList {
+    text-align: center;
+    color: white;
+    font-size: 1.1rem;
+    letter-spacing: 0px;
+}
 /*===== FIXED BACKGROUND =====*/
 .albumHeading{
     padding-bottom: 530px;
