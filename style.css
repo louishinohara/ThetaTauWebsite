@@ -15,6 +15,7 @@ body{
     text-transform: uppercase;
     padding-top: 10px;
     padding-bottom: 10px;
+
 }
 .aboutSectionHeading {
     text-align: center;
@@ -315,14 +316,15 @@ a:link {
 }
 
 .contents .jumbotron {
-    background-color: rgb(161, 161, 161);
+    background-color: rgb(61, 61, 61);
+    opacity: 0.6;   
 }
 .requirementsHeading {
     text-align: center;
     color: white;
     font-size: 1.7rem;
     letter-spacing: 0px;
-    font-weight: 700;
+    font-weight: 700; 
 }
 .requirementsList {
     text-align: center;
@@ -646,6 +648,8 @@ Extra (xl) large devices (large desktops, 1200px and up)
     color: gold;
     font-weight: 300;
     font-size: 2.9rem;
+    padding-top: 100px;
+    padding-bottom: 20px;
 } 
 
 .brotherPhoto{
