@@ -18,13 +18,10 @@ body{
     padding-bottom: 10px;
 }
 
-.profBackground{
-    background-image: url('img/OTNetworks.jpg')
-}
-
-.tales {
-    width: 100%;
-  }
   .carousel-inner{
     width:100%;
+  }
+
+  ul {
+    list-style-type: square;
   }
