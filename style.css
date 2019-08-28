@@ -156,10 +156,10 @@ body{
     transition: background-color 1s ease 0s;
   }
   
-/* ===== Landing Page =====
-.inner {
-    background-image: url('img/fratImages/horizontal/NiceHotCocoa.jpg') 
-} */
+/* ===== Landing Page ===== */
+.home-inner {
+    background-image: url('img/fratImages/horizontal/TauClassBestClass.jpg') 
+}
 
 .caption {
     width: 100%;
