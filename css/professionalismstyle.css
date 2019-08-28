@@ -35,15 +35,13 @@ body{
   li.p::before {
     content: "■"; /* Insert content that looks like bullets */
     padding-right: 8px;
-    color: red; /* Or a color you prefer */
+    color: #CC0033; /* Or a color you prefer */
   }
 
-  @media screen and (max-width: 600px) {
-    div.example {
-      font-size: 30px;
-      color: white;
-        font-weight: 700;
-        letter-spacing: .3rem;
-        text-shadow: .1rem .1rem .8rem black;
-    }
-  }
+  .caption h6 {
+    color: white;
+    font-size: 25 rem;
+    font-weight: 700;
+    letter-spacing: .3rem;
+    text-shadow: .1rem .1rem .8rem black;
+}
