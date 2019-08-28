@@ -19,20 +19,27 @@ body{
     cursor:pointer;
     display:inline-flex;
     margin-left:0;
+<<<<<<< HEAD
 } */
 /* img {
+=======
+}
+.weibochen {
+>>>>>>> 4962960d39787b949070e381b5e4c82e2b3128b5
     max-width: 100%;
     height: auto;
   } */
 
   /*== ALBUM GRID ====*/
-.container {
+.serviceContainer {
     width: 100%;
     display: grid;
     grid-auto-flow: dense;
     padding: 0;
     grid-template:  "1fr 1fr 1fr 1fr" 45vh /* Manual Grid Creation */
                     "1fr 1fr 1fr 1fr" 45vh
+                    "1fr 1fr 1fr 1fr" 45vh;
+                    /* "1fr 1fr 1fr 1fr" 45vh
                     "1fr 1fr 1fr 1fr" 45vh
                     "1fr 1fr 1fr 1fr" 45vh
                     "1fr 1fr 1fr 1fr" 45vh
@@ -41,36 +48,34 @@ body{
                     "1fr 1fr 1fr 1fr" 45vh
                     "1fr 1fr 1fr 1fr" 45vh
                     "1fr 1fr 1fr 1fr" 45vh
-                    "1fr 1fr 1fr 1fr" 45vh
-                    "1fr 1fr 1fr 1fr" 45vh
-                    "1fr 1fr 1fr 1fr" 10vh;
+                    "1fr 1fr 1fr 1fr" 10vh; */
     grid-gap: 5px;
 }
 
-.container .box {
+.serviceContainer .box {
     position: relative;
     background: #ccc;
 }
 
-.container .box.a {
+.serviceContainer .box.a {
     grid-row: span 2;
 }
 
-.container .box.b {
+.serviceContainer .box.b {
     grid-column: span 2;
 }
-.container .box.c {
+.serviceContainer .box.c {
     grid-row: span 3;
 }
 
-.container .box.d {
+.serviceContainer .box.d {
     grid-column: span 3;
 }
 
-.container .box.e {
+.serviceContainer .box.e {
     grid-column: span 4;
 }
-.container .box img {
+.serviceContainer .box img {
     position: absolute;
     top: 0;
     left: 0;
@@ -85,7 +90,7 @@ body{
     - Fix album label*/
 
     @media screen and (min-width:992px) and (max-width: 1200px) {
-        .container {
+        .serviceContainer {
             grid-template:  "1fr 1fr 1fr" 250px
                             "1fr 1fr 1fr" 250px
                             "1fr 1fr 1fr" 250px
@@ -104,7 +109,7 @@ body{
     }
 
 @media (max-width: 992px) {
-    .container {
+    .serviceContainer {
         grid-template:  "1fr 1fr 1fr" 250px
                         "1fr 1fr 1fr" 250px
                         "1fr 1fr 1fr" 250px
@@ -124,7 +129,7 @@ body{
 
 @media (max-width: 768px) {
     
-    .container {
+    .serviceContainer {
         grid-template:  "1fr 1fr" 200px
                         "1fr 1fr" 200px
                         "1fr 1fr" 200px
@@ -144,7 +149,7 @@ body{
 
 @media (max-width: 576px) {
     
-    .container {
+    .serviceContainer {
         grid-template:  "1fr 1fr" 150px
                         "1fr 1fr" 150px
                         "1fr 1fr" 150px
