@@ -406,6 +406,17 @@ a:link {
 .container .box.e {
     grid-column: span 4;
 }
+.container .box.f {
+    grid-column: span 4;
+    grid-row: span 2;
+}
+
+.container .box.g {
+    grid-column: span 3;
+    grid-row: span 2
+}
+
+
 .container .box img {
     position: absolute;
     top: 0;
