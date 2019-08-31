@@ -304,6 +304,10 @@ a:link {
     .miniSection {
         text-align: center;
     }
+    .rush-text{
+        width:576px!important;
+        justify-content: center!important;
+    }
   }
 /*== RUSH SECTION ==*/
 .rush-poster {

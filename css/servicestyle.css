@@ -7,28 +7,9 @@ body{
     background-color: #1b1b1b;
 }
 
-/* .rudmPic{
-    width:250px;
-    height:370px;
-    border-radius:5px;
-    padding:0;
-    overflow-y:visible;
-    display:flex;
-    background-size:cover;
-    margin:10px 10px;
-    cursor:pointer;
-    display:inline-flex;
-    margin-left:0;
-<<<<<<< HEAD
-} */
-/* img {
-=======
-}
-.weibochen {
->>>>>>> 4962960d39787b949070e381b5e4c82e2b3128b5
-    max-width: 100%;
-    height: auto;
-  } */
+.carousel-inner{
+    width:100%;
+  }
 
   /*== ALBUM GRID ====*/
 .serviceContainer {
