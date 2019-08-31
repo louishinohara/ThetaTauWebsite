@@ -305,8 +305,8 @@ a:link {
         text-align: center;
     }
     .rush-text{
-        width:576px!important;
-        justify-content: center!important;
+        width: 100%!important;
+        margin:auto;
     }
   }
 /*== RUSH SECTION ==*/
