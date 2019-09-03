@@ -305,8 +305,12 @@ a:link {
         text-align: center;
     }
     .rush-text{
+
         width: 100%!important;
-        margin:auto;
+        /* margin:auto; */
+    }
+    .requirements-list{
+        
     }
   }
 /*== RUSH SECTION ==*/
@@ -330,8 +334,7 @@ a:link {
     letter-spacing: 0px;
     font-weight: 700; 
 }
-.requirementsList {
-    text-align: center;
+.requirements-list {
     color: white;
     font-size: 1.1rem;
     letter-spacing: 0px;
