@@ -299,18 +299,18 @@ a:link {
   a:active {
     text-decoration: none;
   }
-
+.rush-text{
+    color: white;
+    font-size: 1.4rem;
+    display: center;
+}
 @media (max-width:576px) {
     .miniSection {
         text-align: center;
     }
     .rush-text{
-
         width: 100%!important;
         /* margin:auto; */
-    }
-    .requirements-list{
-        
     }
   }
 /*== RUSH SECTION ==*/
